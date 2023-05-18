@@ -1,3 +1,6 @@
+#Install Yarn
+RUN npm i -g yarn
+
 # Build local monorepo image
 # docker build --no-cache -t  flowise .
 # Run image
