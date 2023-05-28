@@ -19,6 +19,12 @@ Drag & drop UI to build your customized LLM flow using [LangchainJS](https://git
     npx flowise start
     ```
 
+    With username & password
+
+    ```bash
+    npx flowise start --FLOWISE_USERNAME=user --FLOWISE_PASSWORD=1234
+    ```
+
 3. Open [http://localhost:3000](http://localhost:3000)
 
 ## 🐳 Docker
@@ -38,9 +44,11 @@ Drag & drop UI to build your customized LLM flow using [LangchainJS](https://git
     docker build --no-cache -t flowise .
     ```
 2. Run image:
+
     ```bash
     docker run -d --name flowise -p 3000:3000 flowise
     ```
+
 3. Stop image:
     ```bash
     docker stop flowise
@@ -105,11 +113,11 @@ Flowise has 3 different modules in a single mono repository.
 
 ## 🔒 Authentication
 
-To enable app level authentication, add `USERNAME` and `PASSWORD` to the `.env` file in `packages/server`:
+To enable app level authentication, add `FLOWISE_USERNAME` and `FLOWISE_PASSWORD` to the `.env` file in `packages/server`:
 
 ```
-USERNAME=user
-PASSWORD=1234
+FLOWISE_USERNAME=user
+FLOWISE_PASSWORD=1234
 ```
 
 ## 📖 Documentation
@@ -131,6 +139,7 @@ Feel free to ask any questions, raise problems, and request new features in [dis
 ## 🙌 Contributing
 
 See [contributing guide](CONTRIBUTING.md). Reach out to us at [Discord](https://discord.gg/jbaHfsRVBW) if you have any questions or issues.
+[![Star History Chart](https://api.star-history.com/svg?repos=FlowiseAI/Flowise&type=Timeline)](https://star-history.com/#FlowiseAI/Flowise&Date)
 
 ## 📄 License
 
